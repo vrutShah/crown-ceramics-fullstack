@@ -1,0 +1,105 @@
+/* Import Google Fonts: DM Serif Display and Manrope */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --gold: #C49A3C;
+  --gold-light: #D4B05A;
+  --dark: #1A1A18;
+  --charcoal: #2D2D2A;
+  --stone: #F5F2EC;
+  --rust: #8B3A1E;
+  --text-muted: #AAA89F;
+  --border: rgba(196,154,60,0.2);
+  
+  /* Updated Font Variables */
+  --font-serif: 'DM Serif Display', serif;
+  --font-sans: 'Manrope', sans-serif;
+  
+  --radius: 4px;
+  --radius-lg: 12px;
+}
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: var(--font-sans); /* Now using Manrope */
+  background: var(--stone);
+  color: var(--dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--gold);
+  color: var(--dark);
+  font-family: var(--font-sans); /* Ensures button text is Manrope */
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: var(--gold-light); }
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 0.5px solid rgba(196,154,60,0.5);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.btn-outline:hover { border-color: var(--gold); }
+
+.btn-dark {
+  background: var(--dark);
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+/* Section helpers */
+.section { padding: 5rem 2rem; }
+
+.section-label {
+  font-family: var(--font-sans); /* Standardize label to Manrope */
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-serif); /* Now using DM Serif Display */
+  font-size: 32px;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }

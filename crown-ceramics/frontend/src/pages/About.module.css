@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@200..800&display=swap');
+
+.page { min-height: 100vh; }
+.hero { background: var(--dark); padding: 5rem 2.5rem 4rem; }
+/* .title { font-family: var(--font-serif); color: #fff; font-size: 44px; margin-top: 8px; } */
+.title { font-family: 'DM Serif Display', serif; color: #fff; font-size: 44px; margin-top: 8px; }
+.content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 5rem 2.5rem; }
+/* .intro p { font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 1.25rem; } */
+.intro p { font-family: 'Manrope', sans-serif; font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 1.25rem; }
+.timeline { display: flex; flex-direction: column; gap: 1.5rem; }
+.timelineItem { display: grid; grid-template-columns: 60px 16px 1fr; align-items: center; gap: 1rem; }
+/* .timelineYear { font-family: var(--font-serif); font-size: 14px; color: var(--gold); text-align: right; font-weight: 700; } */
+.timelineYear { font-family: 'DM Serif Display', serif; font-size: 14px; color: var(--gold); text-align: right; font-weight: 700; }
+.timelineDot { width: 10px; height: 10px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+/* .timelineEvent { font-size: 14px; color: #555; } */
+.timelineEvent { font-family: 'Manrope', sans-serif; font-size: 14px; color: #555; }
+@media (max-width: 768px) { .content { grid-template-columns: 1fr; } }
